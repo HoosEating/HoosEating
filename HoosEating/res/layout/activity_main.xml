@@ -10,17 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Name"
-        android:textColor="#FFFFFF"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="Posted ago"
+        android:text="@string/name"
         android:textColor="#FFFFFF"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -31,9 +21,20 @@
         android:layout_alignParentTop="true"
         android:layout_marginRight="29dp"
         android:layout_toLeftOf="@+id/textView3"
-        android:text="Location"
+        android:text="@string/location"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#FFFFFF" />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/time_post"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
 
     <ListView
         android:id="@+id/listView1"
@@ -73,15 +74,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignRight="@+id/textView2"
-        android:text="Button" />
+        android:layout_alignRight="@+id/listView2"
+        android:text="@string/main_activity_post_button"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listView3"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Button" />
+        android:text="@string/main_activity_settings" 
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
